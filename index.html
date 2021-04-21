@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="./style.css">
+  <title>To-Do List😃</title>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+    <h1><u>Pk's To-Do List</u>😛</h1>
+    </div>
+  </header>
+  <div class="image-container">
+    <img src="https://cdn2.iconfinder.com/data/icons/startup-management/325/Project_management_Project_Brief-512.png" width="200" height="200">
+  </div>
+  <form>
+    <input type="text" name="To-Do input" class="ToDo-input">
+    <button class="ToDo-button" type="submit">
+      <i class="fas fa-plus-square"></i>
+    </button>
+    <div class="select">
+      <select name="todos" class="filter-todo">
+        <option value="all">All</option>
+        <option value="completed">Done</option>
+        <option value="uncompleted">Yet To Be Done</option>
+        <option value="important">Foremost</option>
+      </select>
+    </div>
+  </form>
+
+  <div class="ToDo-container">
+    <ul class="ToDo-list"></ul>
+  </div>
+  <script src="./client.js"></script>
+</body>
+</html>

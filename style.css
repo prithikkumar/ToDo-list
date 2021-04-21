@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(120deg, #4863a0, #4bf54b);
+  color: #ffebcd;
+  font-family: "Fredoka One", sans-serif;
+  min-height: 100vh;
+}
+header {
+  font-size: 1.25rem;
+  color: #033030;
+}
+header,
+form {
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 3rem;
+  border-style: groove;
+  border-color: mediumblue;
+  background: #c2cfec;
+}
+form input {
+  border-color: orangered;
+}
+form button {
+  color: chartreuse;
+  background: goldenrod;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+/*.header-container {
+  border-style: outset;
+  border-color: maroon;
+  background: yellow;
+}*/
+.image-container {
+  width: 45%;
+  float: right;
+  padding: 0rem;
+  padding-left: 25rem;
+  margin: -9rem;
+  justify-content: right;
+}
+.ToDo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ToDo-list {
+  min-width: 20%;
+  list-style: none;
+}
+.ToDo {
+  margin: 0.5rem;
+  background: #fafad4;
+  color: black;
+  padding: 0rem;
+  border-style: groove;
+  border-color: mediumblue;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.75s ease;
+  background-color: honeydew;
+}
+.ToDo-item {
+  flex: 1;
+  padding-right: 2rem;
+  padding-left: 0.5rem;
+}
+.check-button,
+.delete-button,
+.favorite-button {
+  background: rgb(160, 158, 158);
+  color: black;
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.delete-button {
+  padding: 1rem;
+}
+.delete-button:hover {
+  background: red;
+  color: black;
+}
+.check-button {
+  padding: 1rem;
+  background: #a5b8e4;
+}
+.check-button:hover {
+  background: chartreuse;
+  color: black;
+}
+.favorite-button {
+  padding: 1rem;
+  background-color: #c4aead;
+  color: white;
+}
+.favorite-button:hover {
+  background-color: #0000fa;
+  color: rgb(255, 217, 0);
+}
+.fa-trash,
+.fa-check,
+.fa-star {
+  pointer-events: none;
+}
+.Checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.fall {
+  transform: translateY(8rem) rotate3d(3, 3, 2, 180deg);
+  opacity: 0;
+}
+.important {
+  text-decoration: underline;
+  text-decoration-color: gold;
+  opacity: 2;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border-style: solid;
+  border-color: orangered;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: red;
+  width: 10rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  background: antiquewhite;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: mediumblue;
+  color: chartreuse;
+  top: 0;
+  right: 0;
+  padding: 0.7rem;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.select:hover::after {
+  background: orangered;
+  color: chartreuse;
+}
